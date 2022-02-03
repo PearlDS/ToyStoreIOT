@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+   <!-- <meta http-equiv="refresh" content="10">-->
+    <title>This is a test</title>
+</head>
+<body>
+
+<h1 th:text="'Hello '+ ${session.currentUser}" th:unless = "${session==null}"></h1>
+
+<p> Hello World!</p>
+
+<p> Hello [[${planet}]]!!</p>
+
+<p> Hello [[${planet2}]]!!</p>
+
+<p th:text="'Hello '+${planet}"></p>
+
+<p th:text="${planet2}">lol</p>
+
+</body>
+</html>
